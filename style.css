@@ -1,0 +1,172 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #E9EFEC;
+}
+
+.resume-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #16423C;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+
+#Profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.aside {
+    width: 40%;
+    padding: 20px;
+    background-color: #6A9C89;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-me , .profile{
+    padding-top: 20px;
+}
+.main-content {
+    width: 60%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.contact-me-box1, .contact-me-box2, .contact-me-box3 {
+    display: flex;
+    margin-top: 10px;
+}
+
+.contact-me-box1 i, .contact-me-box2 i, .contact-me-box3 i {
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+.contact-me-box1 p, .contact-me-box2 p, .contact-me-box3 p {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li::before {
+    content: "•";
+  padding-left: 10px;
+    color: #16423C;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.education, .skills, .experience {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+button {
+    background-color: #16423C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #1b5d53;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablets and smaller screens */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .aside, .main-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    #Profile-pic {
+        width: 80px;
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .contact-me-box1 i, .contact-me-box2 i, .contact-me-box3 i {
+        font-size: 18px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    ul li {
+        font-size: 14px;
+    }
+
+    .education, .skills, .experience {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
